@@ -1,0 +1,27 @@
+.para-style
+{
+    color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.audio
+{
+    width: 100px;
+    height: 50px;
+    background-color: lightgreen;
+}
+
+#an,#an2, #an3
+{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+}
+
+.anim
+{
+    box-shadow: 0 15px 18px 0 tomato;
+    opacity: .5;
+}

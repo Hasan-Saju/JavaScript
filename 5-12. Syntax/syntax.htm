@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="syn.js"> -->
+
+    <script>
+        var name="hasan Saju";
+        document.write(name);
+
+        document.write("<br>");
+
+        name="Saju" +" reads in IUT";
+        document.write(name);
+
+        var year =1999,age=22;
+        document.write("I born in "+year+" .My current age is "+age+"<br>");
+
+        // 8. string library
+
+        var text="Bangladesh";
+        document.write(text.length);
+        document.write("<br> Char at 3: "+text.charAt(2));
+
+        document.write("<br>"+text.toUpperCase()+" "+text.toLowerCase());
+
+        document.write("<br>")
+        document.write(text.slice(0,4));
+
+        var input=prompt("Enter the text: ");
+        document.write("<br>Input Len: "+input.length);
+
+        document.write("<br>")
+        document.write(text.concat(input))
+
+
+        // 9. arithmatic and assignment
+        //  % mod
+
+        var x=7;
+        x**=2;
+        document.write("<br>");
+        document.write(x);
+        document.write("<br>");
+        document.write(x/3);
+
+        document.write("<br> Calculator<br>");
+
+        // calculator
+        var num1,num2;
+        num1=prompt("Enter first number: ");
+        num2=prompt("Enter second number: ");
+
+        num1=parseFloat(num1);
+        num2=parseFloat(num2);
+
+        var sum, sub,mul,div,mod;
+        sum=num1+num2;
+        sub=num1-num2;
+        mul=num1*num2;
+        div=num1/num2;
+        mod=num1%num2;
+
+        document.write(num1+" + "+num2+" = "+sum);
+        document.write("<br>");
+
+        document.write(num1+" - "+num2+" = "+sub);
+        document.write("<br>");
+
+        document.write(num1+" * "+num2+" = "+mul);
+        document.write("<br>");
+
+        document.write(num1+" / "+num2+" = "+div);
+        document.write("<br>");
+
+        document.write(num1+" % "+num2+" = "+mod);
+        document.write("<br>");
+
+        // relational operator
+        // 20 == '20' true cz just value check korbe
+        // 20 == '20' false cz datatype + value check korbe
+        // same for != and !==
+
+
+    </script>
+</body>
+</html>
