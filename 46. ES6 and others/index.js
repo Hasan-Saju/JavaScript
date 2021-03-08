@@ -43,3 +43,39 @@ let c=11;
 document.write(add(c,c));
 
 // hoisting and strict mode
+f=20;
+document.write(f);
+var f;
+// let f possible na, const o possible na
+// it's possiblee in js, using a variable without declaring it ;
+
+
+/*
+"use strict"
+e=20;
+*/
+// eita ar kaj korbe na , cz strict mode activated
+
+// default and rest parameter
+// default
+const message=(text="this is a default parameter")=>{
+    document.write(`<br>${text}<br>`);
+}
+
+/*
+function message(text="this is a default parameter")
+{
+    document.write(`<br>${text}<br>`);   
+}
+*/
+
+message("I love js");
+message();
+
+// rest
+// 3 dot
+function show(x,y,...z){
+    document.write(`x=${x}, y=${y}, z=${z}`);
+}
+
+show(11,12,14,15,16);
