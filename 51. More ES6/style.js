@@ -190,3 +190,42 @@ const employee = {
 }
 
 employeeInfo(employee);
+
+// array methods
+
+// find(callback,value)  return the value of the first element that pass certain condition
+document.write("<br>")
+numbers = [5, 55, 11, 9, 80, 20]
+let firstEven = numbers.find(x => x % 2 == 0);
+
+// same duita
+const even = (value) => {
+    if (value % 2 == 0)
+        return value;
+}
+firstEven = numbers.find(even);
+
+
+document.write(firstEven);
+
+let firstEvenIndex = numbers.findIndex(x => x % 2 == 0);
+document.write("<br>")
+document.write(firstEvenIndex);
+
+// string methods, all returns bool
+
+// startsWith(searchString,position) -> check whether a string starts with another string
+
+document.write("<br>")
+
+const st = "Today is Friday";
+document.write(st.startsWith('Today', 0)); //2nd parmeter kotha theke khuja shuru korbe , default 0
+document.write("<br>");
+
+// endsWith(searchString, length) -> check whether a string ends with another string
+document.write(st.endsWith('day'));
+document.write(st.endsWith('da', 14)); //14 length dhore hishab korbe
+document.write("<br>");
+
+// includes(searchString, position) -> check if a string contains another string
+document.write(st.includes(' is ')) //2nd param koi theke khuja start korbe, default 0
